@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OptiVerse Academy — expert-led courses in AI, Machine Learning, Optimization, and Building Energy Simulation by Navid Shirzadi." />
+  <meta name="theme-color" content="#FFF8F1" />
+  <title>OptiVerse Academy — Learn AI, Optimization & Energy Simulation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="OptiVerse Academy home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="32" height="32">
+            <circle cx="20" cy="20" r="17" fill="none" stroke="#17171F" stroke-width="2"/>
+            <circle cx="20" cy="20" r="4" fill="#E85C4A"/>
+            <circle cx="20" cy="3"  r="2" fill="#17171F"/>
+            <circle cx="37" cy="20" r="2" fill="#17171F"/>
+            <circle cx="20" cy="37" r="2" fill="#17171F"/>
+            <circle cx="3"  cy="20" r="2" fill="#17171F"/>
+          </svg>
+        </span>
+        <span class="brand-name">OptiVerse <span class="brand-suffix">Academy</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#categories">Categories</a>
+        <a href="#about">Instructor</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#courses" class="btn btn-primary btn-sm nav-cta">Browse Courses</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+      <a href="#categories">Categories</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">Instructor</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-pink"></span>
+        <span class="blob blob-purple"></span>
+        <span class="blob blob-teal"></span>
+        <span class="blob blob-yellow"></span>
+        <span class="dots"></span>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Learn <span class="mark">AI</span>, <span class="mark">Optimization</span> &amp; <span class="mark">Energy Simulation</span> — the hands‑on way.
+          </h1>
+          <p class="hero-sub">
+            OptiVerse Academy is a growing library of practical, project‑based courses by
+            <strong>Navid Shirzadi</strong> — a highly‑rated instructor with more than a decade of experience.
+            Build real skills that bridge machine learning, optimization, and sustainable energy systems.
+          </p>
+          <div class="hero-cta">
+            <a href="#categories" class="btn btn-primary">
+              Explore Courses
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#about" class="btn btn-outline">Meet the Instructor</a>
+          </div>
+
+          <div class="hero-stats" role="list">
+            <div class="stat" role="listitem">
+              <div class="stat-num" id="stat-courses">18</div>
+              <div class="stat-label">Courses</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-num">4.5<span class="star">★</span></div>
+              <div class="stat-label">Avg. Rating</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-card art-card-1">
+            <div class="art-emoji">🧠</div>
+            <div class="art-title">Generative AI</div>
+            <div class="art-sub">RAG · Prompting · MLOps</div>
+          </div>
+          <div class="art-card art-card-2">
+            <div class="art-emoji">⚡</div>
+            <div class="art-title">Energy Simulation</div>
+            <div class="art-sub">EnergyPlus · Wind · HOMER</div>
+          </div>
+          <div class="art-card art-card-3">
+            <div class="art-emoji">🎯</div>
+            <div class="art-title">Optimization</div>
+            <div class="art-sub">Pyomo · GAMS · Genetic</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee strip -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Python</span><span>·</span>
+        <span>PyTorch</span><span>·</span>
+        <span>EnergyPlus</span><span>·</span>
+        <span>Generative AI</span><span>·</span>
+        <span>Pyomo</span><span>·</span>
+        <span>GAMS</span><span>·</span>
+        <span>MLOps</span><span>·</span>
+        <span>Vertex AI</span><span>·</span>
+        <span>HOMER</span><span>·</span>
+        <span>Time Series</span><span>·</span>
+        <span>Optimization</span><span>·</span>
+        <span>Digital Twins</span><span>·</span>
+        <!-- duplicate for seamless loop -->
+        <span>Python</span><span>·</span>
+        <span>PyTorch</span><span>·</span>
+        <span>EnergyPlus</span><span>·</span>
+        <span>Generative AI</span><span>·</span>
+        <span>Pyomo</span><span>·</span>
+        <span>GAMS</span><span>·</span>
+        <span>MLOps</span><span>·</span>
+        <span>Vertex AI</span><span>·</span>
+        <span>HOMER</span><span>·</span>
+        <span>Time Series</span><span>·</span>
+        <span>Optimization</span><span>·</span>
+        <span>Digital Twins</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <section id="categories" class="section categories">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pick your path</span>
+          <h2>Which world do you want to master?</h2>
+          <p class="section-sub">Two focused tracks. Jump straight to the courses that matter to you.</p>
+        </div>
+
+        <div class="category-grid">
+          <button class="category-card cat-ai" data-category="ai" aria-label="View AI, ML and Data courses">
+            <div class="cat-badge">Track 01</div>
+            <div class="cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="52" height="52">
+                <circle cx="24" cy="24" r="10" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                <circle cx="24" cy="8" r="3" fill="currentColor"/>
+                <circle cx="24" cy="40" r="3" fill="currentColor"/>
+                <circle cx="8" cy="24" r="3" fill="currentColor"/>
+                <circle cx="40" cy="24" r="3" fill="currentColor"/>
+                <path d="M24 11v3M24 34v3M11 24h3M34 24h3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>AI, ML &amp; Data</h3>
+            <p>Generative AI, MLOps, Deep Learning, Data Engineering, Prompt Engineering &amp; more.</p>
+            <div class="cat-footer">
+              <span class="cat-count" id="count-ai">— courses</span>
+              <span class="cat-arrow" aria-hidden="true">→</span>
+            </div>
+          </button>
+
+          <button class="category-card cat-energy" data-category="energy" aria-label="View Energy and Optimization courses">
+            <div class="cat-badge">Track 02</div>
+            <div class="cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="52" height="52">
+                <path d="M8 40h32M12 40V22l12-10 12 10v18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                <path d="M20 40v-8h8v8" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                <path d="M26 6l-4 8h4l-3 8 8-10h-5l3-6z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Energy &amp; Optimization</h3>
+            <p>EnergyPlus, Wind Modeling, Renewable Systems, Pyomo, GAMS &amp; Operations Research.</p>
+            <div class="cat-footer">
+              <span class="cat-count" id="count-energy">— courses</span>
+              <span class="cat-arrow" aria-hidden="true">→</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="section courses">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Course catalog</span>
+          <h2>All Courses</h2>
+          <p class="section-sub">Every card links straight to Udemy for enrollment.</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Course category filter">
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI, ML &amp; Data</button>
+            <button class="filter-btn" data-filter="energy" role="tab" aria-selected="false">Energy &amp; Optimization</button>
+          </div>
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="courseSearch" placeholder="Search courses…" aria-label="Search courses" />
+          </div>
+        </div>
+
+        <div class="course-grid" id="courseGrid" aria-live="polite">
+          <!-- Cards injected by JS -->
+        </div>
+
+        <p class="no-results" id="noResults" hidden>No courses match your search.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <div class="about-photo">
+          <div class="photo-frame">
+            <img src="Headshot.jpg" alt="Navid Shirzadi" loading="lazy" decoding="async" />
+          </div>
+          <div class="photo-caption">
+            <div>
+              <div class="caption-name">Navid Shirzadi</div>
+              <div class="caption-role">Applied Scientist · Ph.D. in Engineering</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="eyebrow">Meet your instructor</span>
+          <h2>Hi, I'm Navid — I teach the tools I use every day.</h2>
+          <p>
+            I'm an <strong>Applied Scientist</strong> with a Ph.D. in Engineering and a decade of
+            experience at the intersection of <strong>AI, optimization, and energy systems</strong>.
+            My work focuses on scalable ML and optimization tools that accelerate building energy
+            modeling, urban infrastructure planning, and digital twins.
+          </p>
+          <p>
+            I currently work at <strong>Natural Resources Canada</strong>, where I contribute to
+            national AI initiatives — surrogate modeling tools, LLM fine‑tuning for energy
+            efficiency, and cloud‑deployed analytics platforms. My background spans hybrid
+            modeling techniques that bridge physics‑based simulations with deep learning,
+            deployed on AWS for real‑world impact.
+          </p>
+          <p>
+            I thrive in interdisciplinary environments where engineering, data science, and cloud
+            technologies converge to solve complex sustainability challenges — and I built
+            OptiVerse Academy to share those methods with you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops -->
+    <section id="workshops" class="section workshops">
+      <div class="container form-inner">
+        <div class="form-intro">
+          <span class="eyebrow">For teams &amp; companies</span>
+          <h2>Request a Live Workshop</h2>
+          <p>
+            Bring OptiVerse to your team with a tailored, hands‑on workshop — delivered
+            virtually, on‑site, or as a hybrid session. Perfect for engineering teams,
+            research groups, and organizations upskilling in AI, optimization, or energy modeling.
+          </p>
+          <ul class="check-list">
+            <li>Customized to your team’s stack, goals, and industry</li>
+            <li>Live, hands‑on labs with real datasets and code</li>
+            <li>Virtual, on‑site, or hybrid delivery formats</li>
+            <li>Q&amp;A, recorded sessions, and follow‑up materials included</li>
+          </ul>
+        </div>
+
+        <form class="form-card" data-form="workshop" novalidate>
+          <div class="field">
+            <label for="w-name">Full name</label>
+            <input type="text" id="w-name" name="name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="w-email">Work email</label>
+            <input type="email" id="w-email" name="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="w-org">Company or organization</label>
+            <input type="text" id="w-org" name="organization" required autocomplete="organization" />
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="w-size">Team size</label>
+              <select id="w-size" name="team_size">
+                <option>1–5</option>
+                <option>6–15</option>
+                <option>16–50</option>
+                <option>50+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="w-topic">Topic of interest</label>
+              <select id="w-topic" name="topic">
+                <option>AI &amp; Machine Learning</option>
+                <option>Generative AI &amp; LLMs</option>
+                <option>Energy &amp; Building Simulation</option>
+                <option>Optimization &amp; OR</option>
+                <option>Custom / Multiple</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="w-format">Preferred format</label>
+              <select id="w-format" name="format">
+                <option>Virtual</option>
+                <option>On‑site</option>
+                <option>Hybrid</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="w-timeframe">Preferred timeframe</label>
+              <input type="text" id="w-timeframe" name="timeframe" placeholder="e.g. Q3 2026" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="w-message">Anything else we should know?</label>
+            <textarea id="w-message" name="message" rows="4" placeholder="Team background, specific outcomes you’re after, etc."></textarea>
+          </div>
+          <!-- Honeypot (spam trap) -->
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn btn-primary btn-lg btn-full">
+            Request Workshop <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container form-inner">
+        <div class="form-intro">
+          <span class="eyebrow">Contact</span>
+          <h2>Have a question? Let’s talk.</h2>
+          <p>
+            Course questions, feedback, collaborations, or just want to say hi —
+            send a message and I’ll get back to you personally.
+          </p>
+          <a class="contact-detail" href="mailto:navid.shirzadi@hotmail.com">
+            <span class="icon" aria-hidden="true">✉</span>
+            navid.shirzadi@hotmail.com
+          </a>
+        </div>
+
+        <form class="form-card" data-form="contact" novalidate>
+          <div class="field">
+            <label for="c-name">Your name</label>
+            <input type="text" id="c-name" name="name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" rows="5" required placeholder="How can I help?"></textarea>
+          </div>
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn btn-primary btn-lg btn-full">
+            Send Message <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="26" height="26">
+              <circle cx="20" cy="20" r="17" fill="none" stroke="#17171F" stroke-width="2"/>
+              <circle cx="20" cy="20" r="4" fill="#E85C4A"/>
+            </svg>
+          </span>
+          <span class="brand-name">OptiVerse <span class="brand-suffix">Academy</span></span>
+        </a>
+        <p class="muted small">Courses in AI, Optimization &amp; Energy Simulation by Navid Shirzadi.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#categories">Categories</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">Instructor</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy muted small">
+        © <span id="year"></span> OptiVerse Academy. All courses hosted on Udemy.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/courses.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
