@@ -345,7 +345,7 @@
   });
 
   /* ---------- Reveal on scroll ---------- */
-  const revealTargets = $$('.section-head, .category-card, .course-card, .about-inner, .feature, .form-inner, .stat, .hero-art .art-card');
+  const revealTargets = $$('.section-head, .category-card, .course-card, .about-inner, .feature, .form-inner, .stat, .hero-image');
   revealTargets.forEach((el) => el.classList.add('reveal'));
 
   if ('IntersectionObserver' in window) {
