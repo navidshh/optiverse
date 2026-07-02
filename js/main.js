@@ -409,6 +409,21 @@
         submitBtn.innerHTML = 'Sending…';
       }
 
+      // Build a mailto: fallback that pre-fills the user's mail client
+      // with the same data — used if the AJAX submission fails for any
+      // reason (network error, endpoint not activated, provider outage, …).
+      const buildMailto = () => {
+        const subject = data._subject;
+        const lines   = Object.entries(data)
+          .filter(([k]) => !k.startsWith('_') && k !== '_honey')
+          .map(([k, v]) => {
+            const label = k.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            return `${label}: ${v || '—'}`;
+          });
+        const body = lines.join('\n');
+        return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      };
+
       try {
         const res = await fetch(FORM_ENDPOINT, {
           method: 'POST',
@@ -420,7 +435,10 @@
         });
         const result = await res.json().catch(() => ({}));
         const ok = res.ok && (result.success === 'true' || result.success === true);
-        if (!ok) throw new Error(result.message || 'Submission failed');
+        if (!ok) {
+          console.error('[OptiVerse form] provider response:', res.status, result);
+          throw new Error(result.message || `Provider returned status ${res.status}`);
+        }
 
         setStatus(
           type === 'workshop'
@@ -430,8 +448,12 @@
         );
         form.reset();
       } catch (err) {
+        console.error('[OptiVerse form] submit failed:', err);
+        const mailto = buildMailto();
         setStatus(
-          `Sorry, something went wrong. Please email <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a> directly.`,
+          `Couldn't submit through the form right now. ` +
+          `<a href="${mailto}">Click here to send it by email instead</a> ` +
+          `or write to <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a> directly.`,
           'error'
         );
       } finally {
