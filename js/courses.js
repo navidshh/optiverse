@@ -72,7 +72,7 @@ window.COURSES = [
     theme: "teal",
     icon: "chip",
     image: "course image/Integration and Deployment of GenAI models.png",
-    url: "https://www.udemy.com/course/integration-and-deployment-of-genai-models-l/?referralCode=439439482D789CE4FB16"
+    url: "https://www.udemy.com/course/integration-and-deployment-of-genai-models/?referralCode=439439482D789CE4FB16"
   },
   {
     title: "Mastering Generative AI with PyTorch: Hands-on Experience",
@@ -116,7 +116,7 @@ window.COURSES = [
     theme: "purple",
     icon: "code",
     image: "course image/Machine Learning.jpg",
-    url: "https://www.udemy.com/course/data-science-machine-learning-a-z-hands-on-python/?referralCode=EC99B3519CFED8CA3321"
+    url: "https://www.udemy.com/course/machine-learning-data-science-a-z-hands-on-python/?referralCode=EC99B3519CFED8CA3321"
   },
   {
     title: "Mastering Git and GitHub Essentials: Hands-on Git",
