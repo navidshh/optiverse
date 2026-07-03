@@ -380,6 +380,8 @@ p  { margin: 0 0 1em; color: var(--ink-2); }
   max-width: 520px;
   height: auto;
   object-fit: contain;
+  /* Blend any residual near-white matte into the cream page background */
+  mix-blend-mode: multiply;
   animation: floatImg 8s ease-in-out infinite;
   will-change: transform;
 }
