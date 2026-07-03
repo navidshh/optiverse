@@ -3,15 +3,156 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="OptiVerse Academy — expert-led courses in AI, Machine Learning, Optimization, and Building Energy Simulation by Navid Shirzadi." />
-  <meta name="theme-color" content="#FFF8F1" />
-  <title>OptiVerse Academy — Learn AI, Optimization & Energy Simulation</title>
+  <meta name="description" content="OptiVerse Academy — hands-on online courses in AI, Machine Learning, Optimization, and Building Energy Simulation, taught by Dr. Navid Shirzadi. 18 practical courses on Udemy." />
+  <meta name="author" content="Dr. Navid Shirzadi" />
+  <meta name="keywords" content="AI courses, machine learning courses, optimization courses, energy simulation courses, EnergyPlus, Pyomo, HOMER, LLM, RAG, generative AI, Navid Shirzadi, OptiVerse Academy" />
+  <meta name="theme-color" content="#FAF7F1" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://optiverse.academy/" />
+
+  <title>OptiVerse Academy — Learn AI, Optimization &amp; Energy Simulation</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="mask-icon" href="favicon.svg" color="#E85C4A" />
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Slack, Discord) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="OptiVerse Academy" />
+  <meta property="og:title" content="OptiVerse Academy — Learn AI, Optimization &amp; Energy Simulation" />
+  <meta property="og:description" content="Hands-on online courses in AI, Machine Learning, Optimization, and Building Energy Simulation by Dr. Navid Shirzadi." />
+  <meta property="og:url" content="https://optiverse.academy/" />
+  <meta property="og:image" content="https://optiverse.academy/front-page.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:alt" content="OptiVerse Academy — AI, Optimization &amp; Energy Simulation illustration" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OptiVerse Academy — Learn AI, Optimization &amp; Energy Simulation" />
+  <meta name="twitter:description" content="Hands-on online courses in AI, Machine Learning, Optimization, and Building Energy Simulation by Dr. Navid Shirzadi." />
+  <meta name="twitter:image" content="https://optiverse.academy/front-page.jpg" />
+
+  <!-- Fonts — preconnect + preload for LCP -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&display=swap" rel="stylesheet" />
+
+  <!-- Preload hero image for fastest Largest Contentful Paint -->
+  <link rel="preload" as="image" href="front-page.jpg" fetchpriority="high" />
+
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured data (JSON-LD) — helps Google surface rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://optiverse.academy/#organization",
+        "name": "OptiVerse Academy",
+        "url": "https://optiverse.academy/",
+        "logo": "https://optiverse.academy/apple-touch-icon.png",
+        "image": "https://optiverse.academy/front-page.jpg",
+        "description": "Hands-on online courses in AI, Machine Learning, Optimization, and Building Energy Simulation.",
+        "sameAs": [
+          "https://www.udemy.com/"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://optiverse.academy/#instructor",
+        "name": "Dr. Navid Shirzadi",
+        "honorificPrefix": "Dr.",
+        "jobTitle": "Applied Scientist",
+        "description": "Applied Scientist with a Ph.D. in Engineering and a decade of experience at the intersection of AI, optimization, and energy systems.",
+        "image": "https://optiverse.academy/Headshot.jpg",
+        "url": "https://optiverse.academy/#about",
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Generative AI",
+          "Large Language Models",
+          "Optimization",
+          "Building Energy Simulation",
+          "EnergyPlus",
+          "Digital Twins"
+        ],
+        "worksFor": { "@id": "https://optiverse.academy/#organization" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://optiverse.academy/#website",
+        "url": "https://optiverse.academy/",
+        "name": "OptiVerse Academy",
+        "publisher": { "@id": "https://optiverse.academy/#organization" },
+        "inLanguage": "en"
+      }
+    ]
+  <!-- Structured data: FAQ (helps Google show FAQ rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where are the courses hosted, and what do I get with each?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every course is published on Udemy. When you enrol, you get lifetime access, downloadable resources, all future updates, and a certificate of completion. Udemy also offers a 30-day money-back guarantee."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the courses beginner-friendly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Most courses start with foundational modules and gradually build toward hands-on projects. Prerequisites are clearly listed on each course page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which course should I start with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For AI and ML, start with a foundations course and then branch into Generative AI or LLMs. For energy and simulation, EnergyPlus fundamentals is the natural entry point, then move on to HOMER or optimization."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer live workshops for teams and companies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Tailored workshops are available in virtual, on-site, or hybrid format for engineering, R&D, and data-science teams, ranging from half-day intros to multi-day deep dives."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I get code, datasets, and project templates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every course ships with the full source code, sample datasets, and any project templates used in the lectures."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I ask questions while I'm going through a course?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Udemy has a built-in Q&A on every course, and the instructor responds personally."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a href="#top" class="skip-link">Skip to main content</a>
+
   <!-- Header -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
@@ -33,6 +174,7 @@
         <a href="#categories">Categories</a>
         <a href="#about">Instructor</a>
         <a href="#workshops">Workshops</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -47,6 +189,7 @@
       <a href="#courses">Courses</a>
       <a href="#about">Instructor</a>
       <a href="#workshops">Workshops</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -96,7 +239,7 @@
         </div>
 
         <div class="hero-art" aria-hidden="true">
-          <img class="hero-image" src="front-page.png" alt="OptiVerse Academy — AI, Optimization &amp; Energy Simulation illustration" width="1024" height="1024" loading="eager" decoding="async" />
+          <img class="hero-image" src="front-page.jpg" alt="OptiVerse Academy — AI, Optimization &amp; Energy Simulation illustration" width="1200" height="1200" fetchpriority="high" decoding="async" />
         </div>
       </div>
     </section>
@@ -331,6 +474,79 @@
           </button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+          <p class="section-sub">Everything you might want to know before enrolling.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Where are the courses hosted, and what do I get with each?</summary>
+            <div class="faq-answer">
+              <p>Every course is published on <strong>Udemy</strong>. When you enrol, you get
+              <strong>lifetime access</strong>, downloadable resources, all future updates, and a
+              certificate of completion. Udemy also offers a <strong>30-day money-back
+              guarantee</strong>, so you can try any course risk-free.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>I’m new to this. Are the courses beginner-friendly?</summary>
+            <div class="faq-answer">
+              <p>Yes. Most courses start with foundational modules and gradually build toward
+              hands-on projects. Prerequisites are clearly listed on each course page — basic
+              Python and comfort with the command line are helpful for AI/ML courses, and no
+              prior simulation experience is required for the energy modules.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Which course should I start with?</summary>
+            <div class="faq-answer">
+              <p>It depends on your goal. For <strong>AI &amp; ML</strong>, start with a
+              foundations course and then branch into Generative AI / LLMs. For <strong>energy
+              &amp; simulation</strong>, EnergyPlus fundamentals is the natural entry point, then
+              move on to HOMER or optimization. Not sure? Use the
+              <a href="#contact">contact form</a> and I’ll suggest a path based on your
+              background.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you offer live workshops for teams and companies?</summary>
+            <div class="faq-answer">
+              <p>Yes. I run tailored workshops — virtual, on-site, or hybrid — for engineering,
+              R&amp;D, and data-science teams. Duration typically ranges from a half-day intro to
+              a multi-day deep dive. Head to the <a href="#workshops">Request a Workshop</a>
+              section to get in touch.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I get code, datasets, and project templates?</summary>
+            <div class="faq-answer">
+              <p>Yes. Every course ships with the full source code, sample datasets, and any
+              project templates used in the lectures. You’re free to reuse them in your own
+              work.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I ask questions while I’m going through a course?</summary>
+            <div class="faq-answer">
+              <p>Absolutely. Udemy has a built-in Q&amp;A on every course — I read and respond
+              there personally. For workshop enquiries or collaborations, use the
+              <a href="#contact">contact form</a>.</p>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
