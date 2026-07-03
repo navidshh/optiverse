@@ -28,7 +28,7 @@ window.COURSES = [
     theme: "purple",
     icon: "rocket",
     image: "course image/MLOps with VertexAI.png",
-    url: "https://www.udemy.com/course/vertex-ai-pipelines-production-mlops-on-google-cloud/"
+    url: "https://www.udemy.com/course/vertex-ai-pipelines-production-mlops-on-google-cloud/?referralCode=95A093C18760B59392C0"
   },
   {
     title: "Generative AI with Context: RAG, CAG & KAG Applications",
@@ -39,7 +39,7 @@ window.COURSES = [
     theme: "pink",
     icon: "brain",
     image: "course image/Generative AI with Context RAG, CAG & KAG Applications.png",
-    url: "https://www.udemy.com/course/generative-ai-with-context-rag-cag-kag-applications/"
+    url: "https://www.udemy.com/course/generative-ai-with-context-rag-cag-kag-applications/?referralCode=507F86F108331752DC72"
   },
   {
     title: "Data Engineering Bootcamp",
@@ -50,7 +50,7 @@ window.COURSES = [
     theme: "blue",
     icon: "data",
     image: "course image/Data Engineering Bootcamp.png",
-    url: "https://www.udemy.com/course/data-engineering-bootcamp/"
+    url: "https://www.udemy.com/course/data-engineering-bootcamp/?referralCode=8200FCC8407FAD9F345C"
   },
   {
     title: "Prompt Engineering for Everyone Bootcamp",
@@ -61,7 +61,7 @@ window.COURSES = [
     theme: "sunset",
     icon: "terminal",
     image: "course image/Prompt Engineering.png",
-    url: "https://www.udemy.com/course/prompt-engineering-for-everyone-bootcamp/"
+    url: "https://www.udemy.com/course/prompt-engineering-for-everyone-bootcamp/?referralCode=42E022658DF3E76CD881"
   },
   {
     title: "Integration and Deployment of GenAI Models",
@@ -72,7 +72,7 @@ window.COURSES = [
     theme: "teal",
     icon: "chip",
     image: "course image/Integration and Deployment of GenAI models.png",
-    url: "https://www.udemy.com/course/integration-and-deployment-of-genai-models/"
+    url: "https://www.udemy.com/course/integration-and-deployment-of-genai-models-l/?referralCode=439439482D789CE4FB16"
   },
   {
     title: "Mastering Generative AI with PyTorch: Hands-on Experience",
@@ -83,7 +83,7 @@ window.COURSES = [
     theme: "midnight",
     icon: "atom",
     image: "course image/Mastering Generative AI with PyTorch Hands-on Experience.jpg",
-    url: "https://www.udemy.com/course/mastering-generative-ai-with-pytorch-hands-on-experience/"
+    url: "https://www.udemy.com/course/mastering-generative-ai-with-pytorch-hands-on-experience/?referralCode=EE491EE1D98990FC616C"
   },
   {
     title: "PyTorch for Deep Learning Bootcamp: Zero to Mastery",
@@ -94,7 +94,7 @@ window.COURSES = [
     theme: "coral",
     icon: "flask",
     image: "course image/PyTorch for Deep Learning Bootcamp Zero to Mastery.jpg",
-    url: "https://www.udemy.com/course/pytorch-for-deep-learning-bootcamp-zero-to-mastery/"
+    url: "https://www.udemy.com/course/pytorch-for-deep-learning-bootcamp-zero-to-mastery/?referralCode=2F28686E4C7F6B8372AE"
   },
   {
     title: "Time Series Analysis and Forecasting with Python",
@@ -105,7 +105,7 @@ window.COURSES = [
     theme: "green",
     icon: "chart",
     image: "course image/Time Series Analysis.jpg",
-    url: "https://www.udemy.com/course/time-series-analysis-and-forecasting-with-python/"
+    url: "https://www.udemy.com/course/time-series-analysis-and-forecasting-with-python/?referralCode=ABED3BECD59085E6CB93"
   },
   {
     title: "Machine Learning & Data Science A-Z: Hands-on Python 2024",
@@ -116,7 +116,7 @@ window.COURSES = [
     theme: "purple",
     icon: "code",
     image: "course image/Machine Learning.jpg",
-    url: "https://www.udemy.com/course/machine-learning-data-science-a-z-hands-on-python/"
+    url: "https://www.udemy.com/course/data-science-machine-learning-a-z-hands-on-python/?referralCode=EC99B3519CFED8CA3321"
   },
   {
     title: "Mastering Git and GitHub Essentials: Hands-on Git",
@@ -127,7 +127,7 @@ window.COURSES = [
     theme: "sunset",
     icon: "git",
     image: "course image/Git.jpg",
-    url: "https://www.udemy.com/course/mastering-git-and-github-essentials-hands-on-git/"
+    url: "https://www.udemy.com/course/mastering-git-and-github-essentials-hands-on-git/?referralCode=AF972F175CA560059387"
   },
 
   // ---------- Energy & Optimization ----------
@@ -140,7 +140,7 @@ window.COURSES = [
     theme: "teal",
     icon: "building",
     image: "course image/EnergyPlus Essentials Mastering Building Energy Simulation.jpg",
-    url: "https://www.udemy.com/course/energyplus-essentials-mastering-building-energy-simulation/"
+    url: "https://www.udemy.com/course/energyplus-essentials-mastering-building-energy-simulation/?referralCode=6DC72EE1AF1B28C2AC50"
   },
   {
     title: "EnergyPlus Advanced: Complex Building Energy Simulation",
@@ -151,7 +151,7 @@ window.COURSES = [
     theme: "midnight",
     icon: "building",
     image: "course image/EnergyPlus Advanced Complex Building Energy Simulation.jpg",
-    url: "https://www.udemy.com/course/energyplus-advanced-complex-building-energy-simulation/"
+    url: "https://www.udemy.com/course/energyplus-advanced-complex-building-energy-simulation/?referralCode=1AB709AEA995BCD434EB"
   },
   {
     title: "Wind Energy Modeling Bootcamp: Hands-on Python",
@@ -162,7 +162,7 @@ window.COURSES = [
     theme: "blue",
     icon: "wind",
     image: "course image/Wind Energy.png",
-    url: "https://www.udemy.com/course/wind-energy-modeling-bootcamp-hands-on-python/"
+    url: "https://www.udemy.com/course/wind-energy-modeling-bootcamp-hands-on-python/?referralCode=A2C59DD54C5BA795F639"
   },
   {
     title: "Optimal Sizing of Hybrid Renewable Energy Systems with HOMER",
@@ -173,7 +173,7 @@ window.COURSES = [
     theme: "green",
     icon: "leaf",
     image: "course image/Homer.jpg",
-    url: "https://www.udemy.com/course/optimal-sizing-of-hybrid-renewable-energy-systems-with-homer/"
+    url: "https://www.udemy.com/course/optimal-sizing-of-hybrid-renewable-energy-systems-with-homer/?referralCode=BECACF9660B504E39C4B"
   },
   {
     title: "Optimization with Python: Complete Pyomo Bootcamp A-Z",
@@ -184,7 +184,7 @@ window.COURSES = [
     theme: "coral",
     icon: "gears",
     image: "course image/Optimization with Python.jpg",
-    url: "https://www.udemy.com/course/optimization-with-python-complete-pyomo-bootcamp-a-z/"
+    url: "https://www.udemy.com/course/optimization-with-python-complete-pyomo-bootcamp-a-z/?referralCode=2365BB23F8D1CE368756"
   },
   {
     title: "Optimization with GAMS: Operations Research Bootcamp A-Z",
@@ -195,7 +195,7 @@ window.COURSES = [
     theme: "sunset",
     icon: "target",
     image: "course image/Optimization with GAMS.jpg",
-    url: "https://www.udemy.com/course/optimization-with-gams-operations-research-bootcamp-a-z/"
+    url: "https://www.udemy.com/course/optimization-with-gams-operations-research-bootcamp-a-z/?referralCode=E8090E1216308DCD5956"
   },
   {
     title: "Multi-Objective Optimization with Python Bootcamp A-Z",
@@ -206,7 +206,7 @@ window.COURSES = [
     theme: "purple",
     icon: "target",
     image: "course image/Multi Objective Optimization.jpg",
-    url: "https://www.udemy.com/course/multi-objective-optimization-with-python-bootcamp-a-z/"
+    url: "https://www.udemy.com/course/multi-objective-optimization-with-python-bootcamp-a-z/?referralCode=C15B092F2938A215C364"
   },
   {
     title: "Optimization with Genetic Algorithms: Hands-on Python",
@@ -217,6 +217,6 @@ window.COURSES = [
     theme: "pink",
     icon: "flask",
     image: "course image/Optimization Genetic Algorithm.jpg",
-    url: "https://www.udemy.com/course/optimization-with-genetic-algorithms-hands-on-python/"
+    url: "https://www.udemy.com/course/optimization-with-genetic-algorithms-hands-on-python/?referralCode=243936B4C982A52D9687"
   }
 ];
