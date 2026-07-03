@@ -61,8 +61,8 @@ h1, h2, h3, h4 {
   line-height: 1.1;
   color: var(--ink);
 }
-h1 { font-size: clamp(2.3rem, 5vw, 3.8rem); font-weight: 800; }
-h2 { font-size: clamp(1.85rem, 3.6vw, 2.75rem); }
+h1 { font-size: clamp(1.9rem, 5.4vw, 3.8rem); font-weight: 800; }
+h2 { font-size: clamp(1.55rem, 3.6vw, 2.75rem); }
 h3 { font-size: 1.25rem; letter-spacing: -0.01em; }
 p  { margin: 0 0 1em; color: var(--ink-2); }
 
@@ -548,7 +548,7 @@ p  { margin: 0 0 1em; color: var(--ink-2); }
 /* ---------- Course grid ---------- */
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: 24px;
 }
 .course-card {
@@ -962,7 +962,7 @@ p  { margin: 0 0 1em; color: var(--ink-2); }
   width: 100%;
   padding: 12px 14px;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 16px; /* 16px prevents iOS Safari from zooming on focus */
   color: var(--ink);
   background: var(--bg);
   border: 1px solid var(--line-strong);
@@ -1056,23 +1056,71 @@ p  { margin: 0 0 1em; color: var(--ink-2); }
 @media (max-width: 900px) {
   .nav, .nav-cta { display: none; }
   .menu-toggle   { display: flex; }
-  .section       { padding: 80px 0; }
+  .header-inner  { height: 68px; }
+  .section       { padding: 72px 0; }
+  .section-head  { margin-bottom: 48px; }
   .category-grid { grid-template-columns: 1fr; }
   .footer-inner  { grid-template-columns: 1fr; text-align: center; }
   .footer-copy   { text-align: center; }
-  .filters       { flex-direction: column; align-items: stretch; }
-  .filter-group  { overflow-x: auto; }
+  .filters       { flex-direction: column; align-items: stretch; gap: 12px; }
+  .filter-group  { overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; justify-content: flex-start; }
+  .filter-group::-webkit-scrollbar { display: none; }
   #courseSearch  { width: 100%; min-width: 0; }
   .search-wrap   { width: 100%; }
+  .hero          { padding: 64px 0 72px; }
+  .hero-cta      { gap: 10px; margin-bottom: 36px; }
+  .marquee-track { font-size: 0.92rem; gap: 20px; }
+  .marquee       { padding: 12px 0; }
+  .photo-caption { position: static; margin: 16px auto 0; transform: none; max-width: 340px; }
+  .photo-frame   { transform: none; box-shadow: 10px 10px 0 rgba(232, 92, 74, 0.14); }
+  .cta           { padding: 72px 0; }
+  .cta-inner     { padding: 48px 28px; }
+  .brand-name    { font-size: 1.2rem; }
 }
-@media (max-width: 560px) {
-  .hero { padding: 60px 0 80px; }
-  h1 { font-size: 2.2rem; }
-  .hero-stats { gap: 24px; }
-  .stat-num { font-size: 1.55rem; }
-  .category-card, .cta-inner { padding: 32px 26px; }
-  .feature-grid { grid-template-columns: 1fr; }
-  .hero-art { max-width: 340px; }
+@media (max-width: 600px) {
+  .container      { padding: 0 18px; }
+  .section        { padding: 60px 0; }
+  .section-head   { margin-bottom: 40px; }
+  .hero           { padding: 48px 0 64px; }
+  .hero-sub       { font-size: 1rem; margin-bottom: 26px; }
+  .hero-cta       { gap: 10px; margin-bottom: 32px; }
+  .hero-cta .btn  { flex: 1 1 100%; }
+  .hero-stats     { gap: 20px; }
+  .stat           { padding-right: 20px; }
+  .stat-num       { font-size: 1.5rem; }
+  .stat-label     { font-size: 0.72rem; }
+  .category-card  { padding: 28px 22px; min-height: 0; }
+  .category-card h3 { font-size: 1.4rem; }
+  .cat-icon       { width: 56px; height: 56px; margin-bottom: 18px; }
+  .feature-grid   { grid-template-columns: 1fr; }
+  .feature        { padding: 24px 22px; }
+  .cta-inner      { padding: 40px 22px; }
+  .cta-actions .btn { flex: 1 1 100%; }
+  .hero-art       { max-width: 320px; }
+  .about-text p   { font-size: 0.98rem; }
+  .form-card      { padding: 24px 18px; border-radius: 20px; }
+  .form-inner     { gap: 32px; }
+  .course-body    { padding: 18px 18px 18px; }
+  .course-title   { font-size: 1.05rem; }
+  .course-desc    { font-size: 0.9rem; margin-bottom: 16px; }
+  .btn            { padding: 12px 20px; }
+  .btn-lg         { padding: 14px 22px; font-size: 1rem; }
+  .site-header    { position: sticky; }
+  .header-inner   { height: 62px; }
+  .brand-name     { font-size: 1.1rem; }
+  .brand svg      { width: 28px; height: 28px; }
+  .footer-links   { gap: 18px; }
+}
+@media (max-width: 380px) {
+  .container      { padding: 0 14px; }
+  h1              { font-size: 1.75rem; }
+  h2              { font-size: 1.45rem; }
+  .hero-stats     { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .stat           { padding-right: 0; border-right: 0; }
+  .brand-name     { font-size: 1.02rem; }
+  .pill           { font-size: 0.78rem; margin-bottom: 18px; }
+  .category-card h3 { font-size: 1.25rem; }
+  .marquee-track  { font-size: 0.85rem; }
 }
 
 /* Motion preference */
