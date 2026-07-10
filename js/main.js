@@ -363,15 +363,16 @@
   }
 
   /* ==========================================================
-     Contact + Workshop forms (via FormSubmit.co — no backend)
+     Contact + Workshop forms (via Web3Forms — no backend)
      ----------------------------------------------------------
-     First submission triggers ONE activation email to your inbox.
-     Click the link in that email once, and all future submissions
-     will be delivered silently. To swap providers (Formspree,
-     Getform, etc.), just change FORM_ENDPOINT below.
+     Web3Forms delivers submissions straight to your inbox with
+     zero activation dance. Get a free access key at:
+       https://web3forms.com/
+     Paste it into WEB3FORMS_ACCESS_KEY below and you're live.
      ========================================================== */
-  const CONTACT_EMAIL   = 'navid.shirzadi@hotmail.com';
-  const FORM_ENDPOINT   = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
+  const CONTACT_EMAIL         = 'navid.shirzadi@hotmail.com';
+  const WEB3FORMS_ACCESS_KEY  = '23f2a30c-d006-4b17-8253-60b877283278';
+  const FORM_ENDPOINT         = 'https://api.web3forms.com/submit';
 
   const setupForm = (form) => {
     const status    = form.querySelector('.form-status');
@@ -398,11 +399,14 @@
       if (hp && hp.value) return;
 
       const data = Object.fromEntries(new FormData(form).entries());
-      data._subject  = type === 'workshop'
+      // Web3Forms required + convenience fields
+      data.access_key = WEB3FORMS_ACCESS_KEY;
+      data.subject    = type === 'workshop'
         ? 'OptiVerse — Workshop Request'
         : 'OptiVerse — Contact Form Message';
-      data._captcha  = 'false';
-      data._template = 'table';
+      data.from_name  = data.name || 'OptiVerse Website';
+      data.replyto    = data.email || CONTACT_EMAIL;
+      data.botcheck   = ''; // Web3Forms built-in honeypot
 
       if (submitBtn) {
         submitBtn.disabled = true;
@@ -411,11 +415,11 @@
 
       // Build a mailto: fallback that pre-fills the user's mail client
       // with the same data — used if the AJAX submission fails for any
-      // reason (network error, endpoint not activated, provider outage, …).
+      // reason (network error, provider outage, missing access key, …).
       const buildMailto = () => {
-        const subject = data._subject;
+        const subject = data.subject;
         const lines   = Object.entries(data)
-          .filter(([k]) => !k.startsWith('_') && k !== '_honey')
+          .filter(([k]) => !['access_key', 'subject', 'from_name', 'replyto', 'botcheck', '_honey'].includes(k))
           .map(([k, v]) => {
             const label = k.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
             return `${label}: ${v || '—'}`;
@@ -434,7 +438,7 @@
           body: JSON.stringify(data)
         });
         const result = await res.json().catch(() => ({}));
-        const ok = res.ok && (result.success === 'true' || result.success === true);
+        const ok = res.ok && result.success === true;
         if (!ok) {
           console.error('[OptiVerse form] provider response:', res.status, result);
           throw new Error(result.message || `Provider returned status ${res.status}`);
