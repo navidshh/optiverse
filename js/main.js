@@ -47,6 +47,49 @@
   setText('count-energy', `${energyCount} courses`);
   setText('stat-courses', String(courses.length));
 
+  /* ---------- SEO: inject Course JSON-LD (ItemList of all Udemy courses) ---------- */
+  try {
+    if (courses.length) {
+      const itemList = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': 'OptiVerse Academy Courses',
+        'itemListElement': courses.map((c, i) => ({
+          '@type': 'ListItem',
+          'position': i + 1,
+          'item': {
+            '@type': 'Course',
+            'name': c.title,
+            'description': c.description,
+            'url': c.url,
+            'provider': {
+              '@type': 'Organization',
+              'name': 'Udemy',
+              'sameAs': 'https://www.udemy.com/'
+            },
+            'author': { '@id': 'https://optiverse.academy/#instructor' },
+            'offers': {
+              '@type': 'Offer',
+              'price': String(c.price),
+              'priceCurrency': 'USD',
+              'category': 'Paid',
+              'url': c.url
+            },
+            'hasCourseInstance': {
+              '@type': 'CourseInstance',
+              'courseMode': 'Online',
+              'inLanguage': 'en'
+            }
+          }
+        }))
+      };
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(itemList);
+      document.head.appendChild(script);
+    }
+  } catch (e) { /* non-fatal — SEO only */ }
+
   /* ==========================================================
      Cover art generator — SVG scenes per course
      No external images. Fully vector, crisp at any size.
